@@ -754,15 +754,43 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Bottom copyright section */}
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-500">
-              © {new Date().getFullYear()} Elias Mokwana. All Rights Reserved.
-            </p>
-            <p className="text-gray-600 mt-2">
-              Securely built by <span className="text-[#FFD700] font-semibold">Thabo is Innocent</span> – A Proud Fan
-            </p>
-          </div>
+       {/* Bottom copyright section with social links */}
+<div className="border-t border-gray-800 mt-12 pt-10 text-center">
+  {/* Social Media Icons */}
+  <div className="flex justify-center gap-8 mb-6">
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/kideomokwana?igsh=dWN5azQ5NHM3cHFo"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-[#E1306C] transition-colors duration-300"
+      aria-label="Instagram"
+    >
+      <Instagram className="w-7 h-7" />
+    </a>
+
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/share/1847VbXQsi/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-[#1877F2] transition-colors duration-300"
+      aria-label="Facebook"
+    >
+      <Facebook className="w-7 h-7" />
+    </a>
+  </div>
+
+  {/* Copyright */}
+  <p className="text-gray-500 text-sm">
+    © {new Date().getFullYear()} Elias Mokwana. All Rights Reserved.
+  </p>
+
+  {/* Built by */}
+  <p className="text-gray-600 text-sm mt-2">
+    Securely built by <span className="text-[#FFD700] font-semibold">Thabo is Innocent</span> – A Proud Fan
+  </p>
+</div>
         </div>
       </footer>
     </div>
