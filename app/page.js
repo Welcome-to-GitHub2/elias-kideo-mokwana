@@ -109,7 +109,7 @@ const galleryImages = [
   '/images/mokwana-2.jpg',
   '/images/mokwana-3.jpg',
   '/images/mokwana-4.jpg',
-  '/images/mokwana-6.jpg',
+  '/images/mokwana-6.jpeg',
   '/images/mokwana-14.jpg',
 ];
 
