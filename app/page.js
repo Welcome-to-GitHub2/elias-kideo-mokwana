@@ -34,7 +34,7 @@
 import { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
-
+import { ShoppingBag } from 'lucide-react'; // For store icon
 // Shadcn UI components
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -251,6 +251,8 @@ export default function Home() {
               <button onClick={() => scrollToSection('gallery')} className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
                 Gallery
               </button>
+              <li><Link href="#store" className="hover:text-[#FFD700]">Store</Link></li>
+              <li><Link href="#partnerships">Partnerships</Link></li>
               <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
                 Contact
               </button>
@@ -284,6 +286,9 @@ export default function Home() {
                 <button onClick={() => scrollToSection('gallery')} className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium text-left">
                   Gallery
                 </button>
+                <Link href="#store">Store</Link>
+                <Link href="#partnerships">Partnerships</Link>
+
                 <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium text-left">
                   Contact
                 </button>
@@ -557,6 +562,49 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+            {/* Official Merchandise Section - Coming Soon */}
+<section id="store" className="py-16 bg-gray-900">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-center mb-12 text-white flex items-center justify-center gap-3">
+      <ShoppingBag className="w-8 h-8 text-[#FFD700]" /> {/* Gold icon for premium feel */}
+      Official Kideo Merchandise
+    </h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {/* Teaser Cards - Coming Soon Placeholders */}
+      <Card className="bg-gray-800 border-gray-700 hover:shadow-xl transition-shadow">
+        <CardContent className="p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4 text-[#FFD700]">Signed Jerseys</h3>
+          <p className="text-gray-400 mb-4">Coming Soon: Get Elias's autographed kits from Al-Hazem, Espérance, and Bafana Bafana.</p>
+          <Button variant="outline" disabled className="mt-4">Notify Me</Button>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-gray-800 border-gray-700 hover:shadow-xl transition-shadow">
+        <CardContent className="p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4 text-[#FFD700]">Kideo Apparel</h3>
+          <p className="text-gray-400 mb-4">Coming Soon: Custom tees, hoodies, and caps with "Kideo 17 Emoyeni" branding.</p>
+          <Button variant="outline" disabled className="mt-4">Notify Me</Button>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-gray-800 border-gray-700 hover:shadow-xl transition-shadow">
+        <CardContent className="p-6 text-center">
+          <h3 className="text-2xl font-semibold mb-4 text-[#FFD700]">Accessories & More</h3>
+          <p className="text-gray-400 mb-4">Coming Soon: Posters, phone cases, and limited-edition items.</p>
+          <Button variant="outline" disabled className="mt-4">Notify Me</Button>
+        </CardContent>
+      </Card>
+    </div>
+    
+    <p className="text-center text-gray-500 mt-12">
+      Stay tuned for the launch! Sign up below for updates.
+    </p>
+  </div>
+</section>
+
 
       {/* ================================================
           CONTACT/SPONSORSHIP FORM SECTION
